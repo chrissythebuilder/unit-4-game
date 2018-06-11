@@ -24,7 +24,7 @@ p {
     padding-bottom: 12px;
 }
 
-#gems img {
+#gems input {
     float: left;
     height: 10%;
     width: 15%;

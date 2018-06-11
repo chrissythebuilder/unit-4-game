@@ -1,14 +1,37 @@
 h1 {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
+}
+
+#game {
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
 }
 
 #instructions {
-    padding: 30px;
+    float: left;
+    padding: 15px 30px;
     background-color: lavenderblush;
     /* border: 5px solid salmon; */
     border-radius: 50px;
     margin: 20px 100px;
+    width: 500px;
+    height: 400px;
+}
+
+p {
+    padding-bottom: 12px;
+}
+
+#gems img {
+    float: left;
+    height: 10%;
+    width: 15%;
+}
+
+#gems {
+    margin: 60px 100px 40px 100px;
 }
 
 #instructions p {
@@ -20,17 +43,33 @@ h2 {
     font-weight: 700px;
 }
 
-#board {
-    background-color: lavenderblush;
-    padding: 50px;
-    margin: 20px 500px;
+#scores {
+    position: relative;
+    margin: 10px 200px;
 }
 
-#randNumber {
-    padding: 30px;
+#random_text {
+    float: left;
+    padding: 20px;
     background-color: azure;
-    text-align: center;
     border: 5px solid mediumaquamarine;
+    width: 300px;
+    margin: 0 50px 40px 50px;
+}
+
+#total_text {
+    float: left;
+    padding: 20px;
+    background-color: azure;
+    border: 5px solid mediumaquamarine;
+    width: 300px;
+    margin: 0 50px 40px 50px;
+}
+
+#board {
+    background-color: lavenderblush;
+    padding: 20px 50px;
+    margin: 120px 500px 50px 500px;
 }
 
 /* #board {
@@ -50,7 +89,3 @@ h2 {
     margin-left: 100px;
 } */
 
-#gems img {
-    height: 8%;
-    width: 8%;
-}

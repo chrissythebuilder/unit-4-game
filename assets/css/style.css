@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+#instructions {
+    padding: 30px;
+    background-color: lavenderblush;
+    /* border: 5px solid salmon; */
+    border-radius: 50px;
+    margin: 20px 100px;
+}
+
+#instructions p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+h2 {
+    font-weight: 700px;
+}
+
+#board {
+    background-color: lavenderblush;
+    padding: 50px;
+    margin: 20px 500px;
+}
+
+#randNumber {
+    padding: 30px;
+    background-color: azure;
+    text-align: center;
+    border: 5px solid mediumaquamarine;
+}
+
+/* #board {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 200px;
+    border: 5px solid burlywood;
+    padding: 20px;
+}
+
+#randNumber {
+    padding: 40px;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 150px;
+    border-radius: 125px;
+    margin-left: 100px;
+} */
+
+#gems img {
+    height: 8%;
+    width: 8%;
+}

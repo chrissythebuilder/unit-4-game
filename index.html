@@ -7,7 +7,9 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+    
     <title>Crystals Collector!</title>
 </head>
 <body>
@@ -24,21 +26,23 @@
         </div>
 
         <div id = "gems">
-            <input type = "image" id="img1" src= "assets/images/crystal1.png"/>
-            <input type = "image" id="img2" src= "assets/images/crystal2.png"/>
-            <input type = "image" id="img3" src= "assets/images/crystal3.png"/>
-            <input type = "image" id="img4" src= "assets/images/crystal4.png"/>
+            <input type = "image" id="img1" src= "assets/images/crystal1.png" data-attr= "data_image1">
+            <input type = "image" id="img2" src= "assets/images/crystal2.png" data-attr= "data_image2">
+            <input type = "image" id="img3" src= "assets/images/crystal3.png"
+            data-attr= "data_image3">
+            <input type = "image" id="img4" src= "assets/images/crystal4.png">
         </div>
+    </div>
+
+    <div id = "board">
+            <h3> <span id = "text"> </span></h3>
+            <h3> Wins: <span id = "wins"> </span> </h3>
+            <h3> Losses: <span id = "loss"> </span> </h3>
     </div>
 
     <div id = "scores">
         <div id = "random_text"> Random Number: <span id="randNumber"> </span> </div>
-        <div id = "total_text"> Your total score is: <span id = "total_score"> </span> </div>
-    </div>
-
-    <div id = "board">
-        <h3> Wins: <span id = "wins"> </span> </h3>
-        <h3> Losses: <span id = "loss"> </span> </h3>
+        <div id = "total_text"> Your total score is: <span id = "totalscore"> </span> </div>
     </div>
 
 </body>

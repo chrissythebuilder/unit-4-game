@@ -32,34 +32,44 @@ $(document).ready(function() {
     //     $("#totalscore").html(imageOneScript);
     // }
 
+    var imgOne = document.getElementById("#img1")
+
+    var imgTwo = document.getElementById("#img2")
+
+    var imgThree = document.getElementById("#img3")
+
+    var imgFour = document.getElementById("#img4")
+
+
+    $("#img1").attr("data-value", Math.floor(Math.random() * 12) + 1);
+
+    $("#img2").attr("data-value", Math.floor(Math.random() * 12) + 1);
+
+    $("#img3").attr("data-value", Math.floor(Math.random() * 12) + 1);
+
+    $("#img4").attr("data-value", Math.floor(Math.random() * 12) + 1);
+
+
     $("img1").on("click", function () {
-        $("#img1").attr("data-value");
-        var imageOne = Math.floor(Math.random() * 12) + 1;
-        var totalscore = totalscore + imageOne;
+        totalscore = totalscore + imgOne;
         totalscore = parseInt(totalscore);
         $("#totalscore").html("<strong>" + totalscore + "</strong> <br>");
     })
 
     $("img2").on("click", function () {
-        $("#img2").attr("data-value");
-        var imageTwo = Math.floor(Math.random() * 12) + 1;
-        totalscore = totalscore + imageTwo;
+        totalscore = totalscore + imgTwo;
         totalscore = parseInt(totalscore);
         $("#totalscore").html("<strong>" + totalscore + "</strong>");
     })
 
     $("img3").on("click", function () {
-        $("#img3").attr("data-value");
-        var imageThree = Math.floor(Math.random() * 12) + 1;
-        totalscore = totalscore + imageThree;
+        totalscore = totalscore + imgThree;
         totalscore = parseInt(totalscore);
         $("#totalscore").html("<strong>" + totalscore + "</strong>");
     })
 
     $("img4").on("click", function () {
-        $("#img4").attr("data-value");
-        var imageFour = Math.floor(Math.random() * 12) + 1;
-        totalscore = totalscore + imageFour;
+        totalscore = totalscore + imgFour;
         totalscore = parseInt(totalscore);
         $("#totalscore").html("<strong>" + totalscore + "</strong>");
     })
